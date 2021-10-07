@@ -1,0 +1,29 @@
+Creamos el proyecto en laravel:
+laravel new libreria
+
+creamos las migraciones
+php artisan make:migration categorias
+php artisan make:migration libros
+
+hacemos las migraciones
+php artisan migrate
+
+instalamos las interfaces para la autenticación
+composer require laravel/ui
+
+indicamos que usaremos bootstrap para el login
+php artisan ui bootstrap --auth
+
+necesitamso correr las siguientes instrucciones
+npm install
+npm run dev
+
+creamos el crud con una herramienta
+composer require ibex/crud-generator --dev
+
+ejecutamos la publicación
+php artisan vendor:publish --tag=crud
+
+ahora ya podemos correr las instrucciones para crear los cruds
+php artisan make:crud categorias
+php artisan make:crud libros
